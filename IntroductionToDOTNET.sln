@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geomet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\DataTypes.csproj", "{2CBE0667-FBB7-4107-8893-EDB65DE2B5F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc", "Calc\Calc.csproj", "{959BE808-25C2-4A49-AAE7-64903D6A2851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{FA359E1C-8FC5-4D78-8BE1-2E6DA17BB826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{2CBE0667-FBB7-4107-8893-EDB65DE2B5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CBE0667-FBB7-4107-8893-EDB65DE2B5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CBE0667-FBB7-4107-8893-EDB65DE2B5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{959BE808-25C2-4A49-AAE7-64903D6A2851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{959BE808-25C2-4A49-AAE7-64903D6A2851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{959BE808-25C2-4A49-AAE7-64903D6A2851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{959BE808-25C2-4A49-AAE7-64903D6A2851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA359E1C-8FC5-4D78-8BE1-2E6DA17BB826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA359E1C-8FC5-4D78-8BE1-2E6DA17BB826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA359E1C-8FC5-4D78-8BE1-2E6DA17BB826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA359E1C-8FC5-4D78-8BE1-2E6DA17BB826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
