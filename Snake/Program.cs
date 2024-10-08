@@ -13,7 +13,7 @@ namespace Snake
 		{
 			Console.OutputEncoding = System.Text.Encoding.UTF8;
 			Console.Title = "Snake";
-
+			
 			//Инициализация позиции курсора внутри границ
 			int x = Console.WindowWidth / 2;
 			int y = Console.WindowHeight / 2;
@@ -28,8 +28,10 @@ namespace Snake
 			while (true)
 			{
 				ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+				Console.ResetColor();
+				Console.SetCursorPosition(1, 1);
+				Console.WriteLine($"X = {x}\t Y = {y}");
 				ClearCursor(x, y);
-
 				switch (keyInfo.Key)
 				{
 					case ConsoleKey.W:
@@ -48,6 +50,7 @@ namespace Snake
 						return;
 					default: break;
 				}
+				if(x == 1 || y == 1 || x == Console.WindowWidth - 2 || y == Console.WindowHeight -2 ) Console.Beep();
 				//Рисуем курсор на новой позиции
 				DrawCursor(x, y);
 			}
@@ -55,9 +58,10 @@ namespace Snake
 
 		static void DrawBorders()
 		{
+			Console.ForegroundColor = ConsoleColor.Green;
 			int width = Console.WindowWidth;
 			int height = Console.WindowHeight;
-
+		
 			//Верхняя и нижняя границы
 			for (int x = 0; x < width; x++)
 			{
@@ -89,6 +93,7 @@ namespace Snake
 
 		static void DrawCursor(int x, int y)
 		{
+			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.SetCursorPosition(x, y);
 			Console.Write("₷");
 		}
